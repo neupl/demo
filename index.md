@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "NeuPL: Neural Population Learning"
 ---
 
 # Interactive Visualization
