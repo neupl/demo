@@ -3,3 +3,4 @@ description: 'pronounced "neuple"'
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-cayman
+markdown: kramdown
