@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <script src="https://vega.github.io/vega/vega.min.js"></script>
     <script src="assets/js/selector.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
 
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,8 +23,8 @@
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
       {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Read Paper</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Open In Colab
+        <a href="https://openreview.net/forum?id=MIX3fJkl_1" class="btn">Read Paper</a>
+        <a href="#" class="btn">Open In Colab (WIP)
         </a>
       {% endif %}
     </header>
