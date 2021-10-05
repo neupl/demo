@@ -11,7 +11,7 @@ In this section we visualize gameplays between 8 distinct policies, represented 
 ## Training Progression through Time
 
 <p align="center">
-  <img src="/assets/img/neupl_rws_progression.gif" />
+  <img src="assets/img/neupl_rws_progression.gif" />
 </p>
 
 ## Interactive Viewer of Learned Policies
