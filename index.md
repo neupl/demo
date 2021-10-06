@@ -13,7 +13,7 @@ In this section we visualize gameplays between 8 distinct policies, represented 
 
 ![Running-with-Scissors](assets/img/rws.png)
 
-To do well in this case, players must learn to infer opponent behaviours based on its limited field-of-view (a 4x3 square in front of the player). For example, if `rock`s are missing from its usual location, then the opponent must have picked up `rock`s!
+To do well in this case, players must learn to infer opponent behaviours based on its limited field-of-view (a 4x4 square in front of the player). For example, if `rock`s are missing from its usual location, then the opponent must have picked up `rock`s!
 
 ## Training Progression through Time
 
@@ -68,7 +68,7 @@ Through time, a sequence of best-responses emerged with policy $$\Pi_\theta(\cdo
 
 ## Example Games
 
-We note that beyond policy (3), it becomes difficult to tell different policies apart as they all are highly skilled and perform coordinated team-play. This is not surprising. MuJoCo Football is a fully-observed environemnt that affords prominent transitive skill dimensions but comparatively muted strategic cyles. In this case, NeuPL automatically reduces to a learning regime similar to that of self-play, which reverts to a curriculum learning regime that is optimal in purely transitive games[^3].
+We note that beyond policy (3), it becomes difficult to tell different policies apart as they all are highly skilled and perform coordinated team-play. This is not surprising. MuJoCo Football is a fully-observed environemnt that affords prominent transitive skill dimensions but comparatively muted strategic cyles. In this case, NeuPL automatically reduces to a learning regime similar to that of self-play, which is optimal in purely transitive games[^3].
 
 
 | Match-Up                |      Visuals|
