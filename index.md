@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 'NeuPL: Neural Population Learning'
-description: 'Siqi Liu<sup>1,2</sup>, Luke Marris^{1,2}, Daniel Hennes^{2}, Josh Merel^{2}, Nicolas Heess^{2}, Thore Graepel^{1,2}'
+description: 'Siqi Liu<sup>1,2</sup>, Luke Marris<sup>1,2</sup>, Daniel Hennes<sup>2</sup>, Josh Merel<sup>2</sup>, Nicolas Heess<sup>2</sup>, Thore Graepel<sup>1,2</sup>'
 affiliation: '[1] University London College, UK<br>[2] DeepMind, UK'
 ---
 
