@@ -1,11 +1,17 @@
 ---
 layout: default
 title: 'NeuPL: Neural Population Learning'
-description: 'We propose NeuPL, a general and efficient population learning framework that learns and represents diverse policies in symmetric zero-sum games within a single conditional network via "self-play".'
+description: 'Siqi Liu, Luke Marris, Daniel Hennes, Josh Merel, Nicolas Heess, Thore Graepel'
 ---
 
+# Summary
+Game-theoretic population learning enables strategic exploration in games with convergence guarantees to solution concepts such as Nash Equilibrium (NE). However, applying such method to real-world games that require approximate best-response solvers (such as deep RL) does not scale, due to the difficulty in iteratively training best-response agent.
 
-# Running-with-Scissors
+We propose Neural Population Learning (NeuPL), a general and efficient population learning framework that learns and represents diverse policies in symmetric zero-sum games within a single conditional network via "self-play".
+
+# Demo
+
+## Running-with-Scissors
 
 In this section we visualize gameplays between 8 distinct policies, represented and executed by a single conditional network in a game of `running-with-scissors`[^1].
 
@@ -13,7 +19,7 @@ In this section we visualize gameplays between 8 distinct policies, represented 
 
 To do well in this case, players must learn to infer opponent behaviours based on its limited field-of-view (a 4x4 square in front of the player). For example, if `rock`s are missing from its usual location, then the opponent must have picked up `rock`s!
 
-## Training Progression through Time
+### Training Progression through Time
 
 We show the training progression of a neural population of policies through time, starting from a fixed intial policy that always pick up all the `rock`s. Starting from the initial policy, we show that a single conditional network $$\Pi_\theta(\cdot \mid o_{<}, \sigma)$$ discovered and represented a set of 8 distinct policies, each best-responding to combinations of others. 
 
@@ -21,7 +27,7 @@ We show the training progression of a neural population of policies through time
   <img src="assets/img/neupl_rws_progression.gif" />
 </p>
 
-## Visualisation of Learned Policies
+### Visualisation of Learned Policies
 
 If you click on a cell in the payoff matrix, an example episode between the pair of policies would be shown. You can step through the episode and observe how the two players' inventories change over time as well as their respective, partial view of the environment.  
 
@@ -46,7 +52,7 @@ If you click on a cell in the payoff matrix, an example episode between the pair
 </script>
 </p>
 
-# 2-vs-2 MuJoCo Football
+## 2-vs-2 MuJoCo Football
 
 <p align="center">
   <img src="assets/img/soccer.png" />
@@ -54,7 +60,7 @@ If you click on a cell in the payoff matrix, an example episode between the pair
 
 We investigate NeuPL in the physically simulated multi-agent environment of 2-vs-2 [MuJoCo Football](https://github.com/deepmind/dm_control/blob/master/dm_control/locomotion/soccer/README.md)[^2], using the 3 DoF BoxHead walkers.
 
-## Training Progression through Time
+### Training Progression through Time
 
 ![NeuPL Results](assets/img/mujoco_soccer.png)
 
@@ -64,7 +70,7 @@ Through time, a sequence of best-responses emerged with policy $$\Pi_\theta(\cdo
   <img src="assets/img/mujoco_soccer_3v2.gif" />
 </p>
 
-## Example Games
+### Example Games
 
 We note that beyond policy (3), it becomes difficult to tell different policies apart as they all are highly skilled and perform coordinated team-play. This is not surprising. MuJoCo Football is a fully-observed environemnt that affords prominent transitive skill dimensions but comparatively muted strategic cyles. In this case, NeuPL automatically reduces to a learning regime similar to that of self-play, which is optimal in purely transitive games[^3].
 
@@ -77,6 +83,18 @@ We note that beyond policy (3), it becomes difficult to tell different policies 
 | `blue (5) - vs red (4)` | ![5v4](assets/img/mujoco_soccer_5v4_vid.gif) |
 
 
+# Citation
+
+```bibtex
+@inproceedings{
+liu2022neupl,
+title={Neu{PL}: Neural Population Learning},
+author={Siqi Liu and Luke Marris and Daniel Hennes and Josh Merel and Nicolas Heess and Thore Graepel},
+booktitle={International Conference on Learning Representations},
+year={2022},
+url={https://openreview.net/forum?id=MIX3fJkl_1}
+}
+```
 
 --------
 
