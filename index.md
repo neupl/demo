@@ -1,10 +1,9 @@
 ---
 layout: default
 title: 'NeuPL: Neural Population Learning'
-description: 'Siqi Liu, Luke Marris, Daniel Hennes, Josh Merel, Nicolas Heess, Thore Graepel'
+description: 'We propose NeuPL, a general and efficient population learning framework that learns and represents diverse policies in symmetric zero-sum games within a single conditional network via "self-play".'
 ---
 
-We propose NeuPL, a general and efficient population learning framework that learns and represents diverse policies in symmetric zero-sum games within a single conditional network via "self-play".
 
 # Running-with-Scissors
 
