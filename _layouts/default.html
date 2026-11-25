@@ -1,34 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<!doctype html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <script src="https://vega.github.io/vega/vega.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script src="assets/js/selector.js"></script>
-    {% seo %}
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    {% include head-custom.html %}
+    <meta charset="utf-8" />
+    <title>Redirecting to NeuPL…</title>
+    <link rel="canonical" href="https://siqi.fr/articles/2022-04/neupl/" />
+    <meta http-equiv="refresh" content="0; url=https://siqi.fr/articles/2022-04/neupl/" />
+    <script>
+      window.location.replace(
+        "https://siqi.fr/articles/2022-04/neupl/" + window.location.hash
+      );
+    </script>
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
-
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      <h2 class="project-tagline">{{ page.affiliation }}</h2>
-      {% if site.show_downloads %}
-        <a href="https://openreview.net/forum?id=MIX3fJkl_1" class="btn">Read our ICLR 2022 paper!</a>
-        <a href="https://iclr.cc/virtual/2022/poster/6950" class="btn">Checkout our poster session!</a>
-      {% endif %}
-    </header>
-
-    <main id="content" class="main-content" role="main">
-      {{ content }}
-    </main>
+    <p>
+      This page has moved to
+      <a href="https://siqi.fr/articles/2022-04/neupl/">https://siqi.fr/articles/2022-04/neupl/</a>.
+    </p>
   </body>
 </html>
